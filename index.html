@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusNest</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <h1>FocusNest</h1>
+        <p>A calm productivity space for planning tasks, focusing deeply, and capturing ideas.</p>
+      </header>
+
+      <section class="card info-grid" aria-label="FocusNest overview">
+        <article>
+          <h2>Abilities</h2>
+          <ul class="info-list">
+            <li>Create, complete, and remove tasks quickly</li>
+            <li>Run a distraction-free focus timer</li>
+            <li>Save notes instantly in your browser</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Advantages</h2>
+          <ul class="info-list">
+            <li>Works fast with no sign-up required</li>
+            <li>Keeps your data locally for privacy</li>
+            <li>Simple interface helps reduce mental load</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>How It Works</h2>
+          <ol class="info-list ordered">
+            <li>Add tasks and mark progress as you finish.</li>
+            <li>Set timer minutes and press Start for focus mode.</li>
+            <li>When time ends, a soft 30-second alarm plays.</li>
+            <li>Use notes to track thoughts or next steps.</li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="card" aria-labelledby="tasks-heading">
+        <h2 id="tasks-heading">Tasks</h2>
+        <form id="taskForm" class="task-form">
+          <input id="taskInput" type="text" placeholder="Add a task" required />
+          <button type="submit">Add</button>
+        </form>
+        <p id="taskSummary">0 of 0 completed</p>
+        <ul id="taskList" class="task-list"></ul>
+      </section>
+
+      <section class="card" aria-labelledby="timer-heading">
+        <h2 id="timer-heading">Focus Timer</h2>
+        <div class="timer-row">
+          <label for="timerMinutes">Minutes</label>
+          <input id="timerMinutes" type="number" min="5" max="90" value="25" />
+        </div>
+        <p id="timerDisplay" class="timer-display">25:00</p>
+        <div class="timer-actions">
+          <button id="startPauseBtn" type="button">Start</button>
+          <button id="resetBtn" type="button" class="secondary">Reset</button>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="notes-heading">
+        <h2 id="notes-heading">Notes</h2>
+        <textarea id="notes" placeholder="Write quick notes..."></textarea>
+      </section>
+
+      <footer class="tagline">made my reshab</footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

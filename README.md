@@ -1,35 +1,25 @@
-# FocusNest
+# FocusForge - Productivity Command Center
 
-FocusNest is a minimalist productivity web application designed to help users manage tasks, stay focused, and capture ideas in one calm workspace.
-
-The app combines a task manager, focus timer, and notes system to create a distraction-free environment for deep work and daily productivity.
+FocusForge is a single-page productivity web app built with vanilla HTML, CSS, and JavaScript.
+It helps users manage tasks, run focus sessions, track habit streaks, and capture notes with local data persistence.
 
 ## Features
-
-* Create, complete, and remove tasks quickly
-* Built-in focus timer for deep work sessions
-* Quick notes section to capture ideas instantly
-* Clean and simple user interface
-* No sign-up required
-* Data stored locally in the browser for privacy
-
-## How It Works
-
-1. Add tasks and track progress as you complete them.
-2. Set the focus timer (default 25 minutes) to start a deep work session.
-3. When the timer finishes, a gentle alarm notifies you.
-4. Use the notes section to record ideas, reminders, or thoughts.
+- Task sprint board with priority, effort estimate, completion status, and deletion
+- Focus timer (Pomodoro style) with configurable focus/break durations
+- Habit streak tracker with current streak and best streak stats
+- Quick notes with autosave
+- Live productivity insights (completion rate, focus minutes, habit hits, score)
+- Responsive, mobile-friendly interface with animated visual design
 
 ## Tech Stack
+- HTML5
+- CSS3 (custom responsive UI, gradients, animations)
+- JavaScript (ES6, localStorage)
 
-* HTML
-* CSS
-* JavaScript
+## Run Locally
+1. Open `index.html` in your browser.
 
-## Goal of the Project
-
-FocusNest was built as a lightweight productivity tool that helps users focus on what matters while avoiding unnecessary complexity.
-
----
-
-Made with focus and simplicity.
+## Resume Bullet Ideas
+- Built a responsive productivity dashboard in vanilla JavaScript featuring task management, habit tracking, and Pomodoro workflow automation.
+- Implemented client-side data persistence using localStorage, enabling stateful experiences without a backend.
+- Designed a custom UI system with animated components and real-time productivity analytics to improve engagement.
